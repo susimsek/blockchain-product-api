@@ -1,0 +1,8 @@
+entity Product {
+  title String required,
+  price BigDecimal required min(0)
+}
+
+paginate Product with pagination
+dto * with mapstruct
+service all with serviceImpl
